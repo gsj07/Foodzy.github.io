@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Food Delivery Service in India | MyOnlineMeal.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen and(max-width:1100px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Baloo+Bhaijaan+2&family=Caveat&family=Domine&family=Itim&family=Puppies+Play&family=Red+Hat+Display:wght@300&family=Syne+Mono&display=swap"
+        rel="stylesheet">
+    
+    <style>
+        /* CSS Reset
+            {
+
+            margin: 0;
+            padding: 0;
+
+        }
+
+        /* CSS Variables */
+        :root {
+            --navbar-height: 59px;
+        }
+
+        /* Navigation Bar */
+        #navbar {
+            position:relative;
+            top:0px;
+             position:fixed;
+            position:sticky;
+        
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+        }
+
+        /*Navigation Bar:logo and image*/
+        #logo {
+            margin: 10px 35px;
+
+        }
+
+        #logo img {
+            margin: 8px 8px;
+            height: 56px;
+
+        }
+
+        /*Navigation Bae:List Styling*/
+        
+        #navbar ul {
+            display: flex;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top:0px;
+            left:0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+        }
+
+        #navbar ul li {
+            /* color:white;  */
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+
+        }
+
+        #login{
+            padding: 5px;
+            margin-left: 572px;
+            border-radius: 12px;
+        } 
+        #login:hover{
+            background-color:aquamarine;
+        }
+
+        #logout{
+            border-radius: 12px;
+        }
+
+        #logout:hover{
+            background-color: red;
+         
+        }
+
+        /*Home Section*/
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 420px;
+        }
+
+        #home::before {
+            content: "";
+            position: absolute;
+            background-image: url(chicken.jpg);
+            top:0px;
+            left:0px;
+            height: 80%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+
+
+        }
+
+        #home h1 {
+            color: white;
+            text-align: center;
+            font-family: 'Domine', serif;
+
+        }
+
+        #home p {
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Itim', cursive;
+        }
+
+        /* Services Section */
+        #services {
+            margin: 34px;
+            display: flex;
+            /* grid-template-columns: repeat(auto-fit,minmax(400px, 1fr)); */
+        }
+
+        #services .box {
+            border: 2px solid yellow;
+            padding:33px;
+            margin:3px 25px;
+            border-radius: 23px;
+            background-color: bisque;
+        }
+
+        #services .box img {
+            height: 150px;
+            margin:auto;
+            display:block;
+        }
+        
+        #services .box p{
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+
+        /* Clients Section */
+        
+        #client-section{
+            height:454px;
+
+        }
+        #client-section::before{
+            content: "";
+            position:absolute;
+             background-image: url(blak.jpg); 
+            width:100%;
+            height:65%;
+            z-idex: -1;
+            opacity:0.4;
+        }
+    
+        #clients{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        .client-item{
+           padding:34px;
+        }
+
+        #clients img{
+            height:154px;
+        }
+
+        #client-item{
+           padding:34px;
+        }
+
+        /* Contact Section */
+        #contact{
+            position:relative;
+
+        }
+        #contact::before{
+            content:"";
+            position:absolute;
+            width:100%;
+            height:100%;
+            z-index:-1;
+            opacity:0.7;
+            background-image: url(contact.jpg);
+            
+        }
+        #contact-box{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-box input,
+        #contact-box textarea{
+            width:100%;
+             padding:0.5rem; 
+             border-radius: 9px;
+             font-size: 1.1rem;
+
+        }
+        #contact-box form{
+            width:40%;
+        }
+        #contact-box label{
+            font-size: 1.3rem;
+            font-family: 'Domine', serif;
+
+        }
+        footer{
+            background:black;
+            color:white;
+            padding:9px 20px;
+        }
+
+        /*Utility Classes*/
+        .h-primary {
+            font-size: 3.8rem;
+            padding: 12px;
+            font-family: 'Itim', cursive;
+            margin-top:102px;
+
+        }
+
+        .h-secondary {
+            font-size: 2.3rem;
+            padding: 12px;
+            font-family: 'Itim', cursive;
+
+        }
+
+
+        .btn {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: brown;
+            color: white;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+       
+
+        .center {
+            text-align: center;
+        } */
+    </style>
+
+
+</head>
+
+<body>
+    
+    <nav id="navbar">
+        <div id="logo">
+
+            <img src="https://cdn.pixabay.com/photo/2022/02/03/19/12/fork-6991173__340.png" alt="MyOnlineMeal.com">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About us</a></li>
+            <li class="item"><a href="#">Contact us</a></li>
+        </ul>
+        <ul>
+            <a href="form.html">
+                <button id="login">sign in</button>
+            </a>
+            
+            <button id="logout">sign up</button>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus voluptatum, exercitationem placeat
+            voluptatibus tempore obcaecati aut, illo asperiores cum tenetur qiet debitis.</p>
+        <p>Lorem ipsum dolor sit amet consrem molestiae officiis non adipisci, libero consequatur provident? Eum,
+            debitis, perferendis
+            fuga eaquectio?</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+
+            <div class="box">
+                <img src="https://cdn.pixabay.com/photo/2022/01/28/12/17/fast-food-6974507_960_720.jpg" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et doloribus sapiente suscipit maxime.
+                    Ipsum
+                    perferendis,
+                    corrupti voluptatem aliquam saepe dolorum quos iste soluta cumque velit sapiente ducimus sequi? Eos
+                    obcaecati nostrum ipsam reprehenderit molestias!</p>
+
+            </div>
+            <div class="box">
+                <img src="https://cdn.pixabay.com/photo/2019/01/26/02/09/buffet-3955616__340.jpg" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et doloribus sapiente suscipit maxime.
+                    Ipsum
+                    perferendis,
+                    corrupti voluptatem aliquam saepe dolorum quos iste soluta cumque velit sapiente ducimus sequi? Eos
+                    obcaecati nostrum ipsam reprehenderit molestias!</p>
+
+            </div>
+            <div class="box">
+                <img src="https://cdn.pixabay.com/photo/2017/05/25/17/26/food-2343893__340.jpg" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et doloribus sapiente suscipit maxime.
+                    Ipsum
+                    perferendis,
+                    corrupti voluptatem aliquam saepe dolorum quos iste soluta cumque velit sapiente ducimus sequi? Eos
+                    obcaecati nostrum ipsam reprehenderit molestias!</p>
+
+            </div>
+        </div>
+
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="https://cdn.pixabay.com/photo/2018/05/08/21/28/apple-3384010__480.png" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80658__480.png" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688__340.png" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266__340.jpg" alt="Our client">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact us</h1>
+        <div id="contact-box">
+            <form action="">
+            <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name"
+                placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="name">Email: </label>
+                <input type="email" name="name" id="email"
+                placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <label for="name">Phone Number: </label>
+                <input type="phone" name="name" id="phone"
+                placeholder="Enter your Phone">
+            </div>
+            <div class="form-group">
+                <label for="name">Message: </label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy;www.myOnlineMeal.com. All rights reserved!
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>
